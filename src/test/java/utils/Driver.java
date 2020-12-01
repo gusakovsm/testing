@@ -35,7 +35,7 @@ public class Driver {
                 driver = new OperaDriver();
                 break;
             default:
-                throw new exceptions.UnsupportedBrowserException("Unsupported browser. \nSupported browsers are: Chrome, Firefox, Edge and Opera");
+                throw new UnsupportedBrowserException("Unsupported browser. \nSupported browsers are: Chrome, Firefox, Edge and Opera");
         }
         driver.manage().window().maximize();
         return driver;

@@ -2,15 +2,15 @@ package tests;
 
 import org.testng.annotations.Test;
 import pageFactory.HomePage;
-import utils.Driver;
 
 import static org.testng.Assert.assertEquals;
+import static utils.Driver.getDriver;
 
 public class TestAutomationSkillsTest extends Hooks {
 
     @Test
     public void test() {
-        int actualSkillCount = new HomePage(Driver.getDriver())
+        int actualSkillCount = new HomePage(getDriver())
                 .openHomePage()
                 .openCareersMenu()
                 .selectVacanciesMenuOption()
